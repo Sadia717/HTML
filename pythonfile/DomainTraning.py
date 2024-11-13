@@ -63,8 +63,8 @@ else:
         print("Pass")'''
 
 #Take input from user of N and print the number upto N from 1 using while loop
-n=int(input())
-i=0
+'''n=int(input())
+i=0'''
 '''while(i<=n):
     print(i)
     i+=1
@@ -80,6 +80,85 @@ for i in range(n,0,-1):
     print(i,end="")'''
 
 #Take a user from input and print tables using for loop
-n=int(input())
+'''n=int(input())
 for i in range(1,11):
-    print(f"{n}x{i}=",n*1)
+    print(f"{n}x{i}=",n*1)'''
+#Arrays
+#one-D Array and Mutidimensional Array
+#Take the float values from user of size 10 and print the array
+'''import array as arr
+a=[]
+a=arr.array()
+print(type(a))
+for i in a:
+    print(i)
+
+'''
+'''import array as arr
+n=int(input("Enter the size"))
+a=arr.array('f',[])
+for i in range(n):
+    a.append(float(input("Enter the element:")))
+print(a)
+for i in range(n):
+    print(a[i])'''
+#it adds the value and it doesn't replace the value:
+'''import array as arr
+n=int(input("Enter the size"))
+a=arr.array('f',[])
+for i in range(n):
+    a.append(float(input("Enter the element:")))
+print(a)
+for i in range(n):
+    print(a[i])
+'''
+#append,insert,pop,pop(n),remove,index,reverse,extend,slicing[start:stop:step]
+#by using the above methods
+'''import array as arr
+a=arr.array('i',[101,102,103,104,105,1,0,2,5,8,5,85,88,1,0,2,5,8,5,85,88])
+print(len(a))
+#remove(88)
+a.remove(88)
+print(a)
+a.pop()
+print("Ater pop length",len(a))
+sliced_array=a[15:20]
+print(a)
+a.pop(0)
+print("after pop(0) Length ",len(a))
+a.extend(sliced_array)
+print("After sliced array extend Length",len(a))
+a.reverse()
+print("Final Length",len(a))
+print("index of 0",a.index(0))'''
+
+#ways to create Arrays using Numpy:
+#array()Function
+#linspace()Function
+#longspace()Function
+#arange()Function
+#zeros()Function
+#ones()Function
+#syntax : numpy.array(object,dtype=None,copy=True,order='k',sub)
+#declare a list with a different datatype and display a list as array
+'''import array as arr
+import numpy as np
+a=[1,2,35,8,9,5,6,9,3.6,96.5,9,5]
+arr_1=np.array([a],int)
+print(arr_1)'''
+
+#linspace()Function syntax:
+#numpy.linspace(start,stop,num=50,endpoint=True,restep=False,dtype=None,axis=0)
+#start-it represents starting element.
+#stop- it represents endpoint element.
+#num-it represents number of parts the element should be divided.default is 50,it must be non-negative.
+#endpoint-if True,stops is the last element.if false,stop is not included.
+import numpy as np 
+linspace_fun=np.linspace(1,8,5,endpoint=False)
+print(linspace_fun)
+longspace_fun=np.longspace(1,8,5,endpoint=False)
+print(longspace_fun)
+Zeros_fun=np.zeros([2,5])
+print(Zeros_fun)
+ones_fun=np.ones([3,5])
+print(ones_fun)
