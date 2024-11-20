@@ -254,11 +254,137 @@ print("Reverse number:", reverse)'''
 
 #write a python prgm to find factorial of given number
 #to find factorial we have to perform product of all the digits from given number is 5 to till 1
-n=int(input())
+'''n=int(input())
 fact=1
 for i in range(1,n+1): #for i in range(1,n+1)or (n,0,-1):
     fact=fact*i
-print("fact")
+print("fact")'''
+
+#wite a python program to find out a strong number
+#we have to find out sum of factorials of all the digits of a number is equal to the given number ex=145
+'''import math
+
+n=int(input())
+sum_of_factorials = 0
+temp=n
+while temp>0:
+    digit=temp % 10
+    sum_of_factorials+=math.factorial(digit)
+    temp=temp//10
+if sum_of_factorials == n:
+    print(n, "is a strong number.")
+else:
+    print(n, "is not a strong number.")'''
+
+'''n=int(input("Enter the number:"))
+m=n
+fact=1
+sum=0
+while n:
+    d=n%10
+    for i in range(1,d+1,1):
+        fact=fact*i
+    sum+=fact
+    fact=1
+    n=n//10
+if sum==m:
+    print("strong")
+else:
+
+    print("not strong")'''
+
+#wrire a python program to find the given number is armstrong number or not
+# to find armstrong number we have to find power of all the digits of a number=the given number ex=153
+'''n=int(input())
+a=n
+m=str(n)
+digit=len(m)
+sum=0
+while n:
+    d=n%10
+    cube=d**digit
+    sum+=cube
+    n=n//10
+if sum==a:
+    print("armstrong")
+else:
+    print("not armstrong")'''
+
+#write a python prgm to find out prime or not 
+#a number must have only tow numbers that is 1 and number itself 
+'''n=int(input())
+for i in range(2,n):
+    if n%i==0:
+        print("not prime")
+        break
+else:
+    print("prime")'''
+
+#write a python program to find whether the given number is a magic number or not
+#to find magic number we have to find sum of all the digits recursively till the sum become 1 then it is
+# a magic number else not a magic number ex=55, ex=73
+'''n=int(input("Enter the number:"))
+while n>9:
+    sum=0
+    while n>0:
+        sum+=n%10
+        n= n//10
+    n=sum
+if n==1:
+    print("It is a magic number")
+else:
+    print("It is not a magic number")'''
+'''while n>9:
+    sum=0
+    temp=n
+    while n:
+        d=n%10
+        sum+=d
+        n=n//10
+    n=sum
+if n==1:
+    print("magic")
+else:
+    print("not magic")'''
+
+#write a python prgm to swap the variables a=10,b=20
+#3 approaches are: 1,temp 2,pthon logic 3,xor
+#a variable is a name give to location of memory stack memory,heap memory
+#2
+'''a=10
+b=20
+a,b=b,a
+print(a)
+print(b)'''
+#1
+'''a=10
+b=20
+cse=a
+a=b
+b=cse
+print(a)
+print(b)'''
+#3
+'''a=10
+b=20
+a=a^b
+b=a^b
+a=a^b
+print(a)
+print(b)'''
+
+#write a python program to find fibonacii sequnce for the range 
+#the sum of previous two numbers is equal to next number is called fibonacii numbers ex: n=5
+n=int(input())
+
+
+
+
+
+
+
+
+
 
 
 
