@@ -153,7 +153,7 @@ print(arr_1)'''
 #stop- it represents endpoint element.
 #num-it represents number of parts the element should be divided.default is 50,it must be non-negative.
 #endpoint-if True,stops is the last element.if false,stop is not included.
-import numpy as np 
+'''import numpy as np 
 linspace_fun=np.linspace(1,8,5,endpoint=False)
 print(linspace_fun)
 longspace_fun=np.longspace(1,8,5,endpoint=False)
@@ -162,3 +162,103 @@ Zeros_fun=np.zeros([2,5])
 print(Zeros_fun)
 ones_fun=np.ones([3,5])
 print(ones_fun)
+'''
+#Lists:
+'''
+a=[]
+n=int(input("Enter Number of Elemens:"))
+for i in range(n):
+    a.append(int(input("Enter Element")))
+print("List")
+for element in a:
+    print(element)'''
+
+#Write a program to find sum of all digits in a number n=1+2+3+4=10
+'''n = 1234
+sum_of_digits = 0
+while n > 0:
+    sum_of_digits += n % 10
+    n //= 10
+print("Sum of digits:", sum_of_digits)'''
+
+'''def sum_of_digits(n):
+    total = 0
+    while n > 0:
+        total += n % 10
+        n = n // 10
+    return total
+'''
+'''n = 1234
+print("Sum of all digits:", sum_of_digits(n))'''
+
+'''n = 1234
+total = 0
+
+while n > 0:
+    total += n % 10
+    n = n // 10
+
+print("Sum of all digits:", total)'''
+'''n = 123
+product = 1
+
+while n > 0:
+    product *= n % 10
+    n = n // 10
+
+print("Product of all digits:", product)
+'''
+#write the program to find out whether the given number is neon or not 
+#a number is said to be neon if the sum of all the digits od square of number is equal to the given number
+'''n=int(input())
+sq=n*n
+sum=0
+while sq:
+    d=sq%10
+    sum+=d
+    sq=sq//10
+if sum==n:
+    print("Neon")
+else:
+    print("Not neon") '''
+
+#write a python program to find out the given number is spy number or not
+#a number is said to be spy if sum of all digits number is equal to the product of all the digits ex=123
+'''n=int(input())
+sum,prod=0,1
+while n:
+    d=n%10
+    sum+=d
+    prod*=d
+    n=n//10
+if sum==prod:
+    print("spy")
+else:
+    print("not spy")'''
+
+#wite a python prgm to count number of digits in a number n=1234
+'''n=int(input())
+count=0
+while n:
+    count+=1
+    n=n//10
+print("count")'''
+#write a python program to reverse of a number
+'''n=int(input())
+reverse=0
+while n:
+    d= n % 10
+    reverse=reverse*10+d
+    n=n//10
+print("Reverse number:", reverse)'''
+
+#write a python prgm to find factorial of given number
+#to find factorial we have to perform product of all the digits from given number is 5 to till 1
+n=int(input())
+fact=1
+for i in range(1,n+1): #for i in range(1,n+1)or (n,0,-1):
+    fact=fact*i
+print("fact")
+
+
+
